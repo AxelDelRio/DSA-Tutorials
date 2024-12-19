@@ -1,4 +1,4 @@
-## GRAPHS!
+# GRAPHS
 
 Binary Trees are just graphs in general
 
@@ -7,13 +7,13 @@ Binary Trees are just graphs in general
 
 connected graphs are considered connected when all nodes are connected
 
-NOTE: disconnected graphs are valid graphs
+**NOTE:** disconnected graphs are valid graphs
 
 Nodes/Vertices that are connected to each other are considered "neighbors" or "adjacency"
 
 ## Types of Graphs
 
-# Undirected Graph
+### Undirected Graph
 
 - A Undirected graph signifies where the edges don't have any direction to them
 
@@ -31,11 +31,11 @@ We can think of a Social Network as an undirected graph
 Where the Nodes/Vertices are people and the edges are chats/messages
 
 
-# Directed Graph
+### Directed Graph
 
 - A Directed Graph have the edges point to a specific direction or to a specific Node! (make sure all the edges have a direction)
 
-NOTE: These edges are one way connection, meaning you can't go both forward and back to the vertex (Unless we have 2 directed edges that go forward and backwards to the vertex)
+**NOTE:** These edges are one way connection, meaning you can't go both forward and back to the vertex (Unless we have 2 directed edges that go forward and backwards to the vertex)
 
 Example: 
 
@@ -63,7 +63,7 @@ Cycle:   A -- B     Acyclic:    A -- B
 
 
 
-Remeber we can also have directed edges that point forwards and backwards to a vertex
+Remember we can also have directed edges that point forwards and backwards to a vertex
 
 Ex:
 
@@ -77,7 +77,7 @@ ex: 4->3->6->8->9->5
 
 Tuple: p = [(4,3),(3,6),(6,8),(8,9),(9,5)] <- These values are in pairs!
 
-# Weighted Graphs
+### Weighted Graphs
 
 - A weighted graph is where the edges have a value associated with them
 
@@ -106,9 +106,9 @@ p = [(5,6,2), (6,4,1), (4,2,3)]
 
 
 
-# How to Represent a GRAPH
+## How to Represent a GRAPH
 
-1. Edge list
+**1. Edge list**
 
 An Edge list is basically a graph and collects two things
 
@@ -117,7 +117,7 @@ A verticy list and edge list
 the verticy list represents all the nodes in the graph
 the edge list represents all directions to each node and the weight of the edges associated with them
 
-2. Adjacency List
+**2. Adjacency List**
 
 With an Adjacency List, we create an Array full of Linked List's where each head of the Linked List are the Vertices that we have in our graph
 
@@ -143,7 +143,7 @@ REMEMBER: the Time complexity for an adjacency list is O(V) where V is the numbe
 
 SO the Adjacency List method is slow when looking up an edge but doesn't consume as much memory/resources. This makes the list useful when the graph has minimal edges but more vertices
 
-* IN DEPTH COMPLEXITY FOR OPERATION USING ADJACENCY LIST:
+IN DEPTH COMPLEXITY FOR OPERATION USING ADJACENCY LIST:
 
  - A find/exist function between two nodes is O(V) - traverse the list for a vertex
  - Adding an edge would be O(1) - push_back an edge to a list
@@ -151,7 +151,7 @@ SO the Adjacency List method is slow when looking up an edge but doesn't consume
  - Iterating through all edges would be O(V + E)
 
 
-3. Adjacency Matrix
+**3. Adjacency Matrix**
 
 With an adjacency matrix, we create a 2D array where the column and rows are the vertex's
 
@@ -184,13 +184,13 @@ REMEMBER: The Time complexity for an adjacency matrix is O(1) since we only sear
 
 SO the Adjacency Matrix method is very fast when looking up an edge but consumes a lot of memory/resources. This makes the Matrix useful when the graph has a lot of Edges.
 
-* IN DEPTH COMPLEXITY FOR OPERATION USING ADJACENCY MATRIX:
+IN DEPTH COMPLEXITY FOR OPERATION USING ADJACENCY MATRIX:
  - A find/exist function between two nodes is O(1) - direct acces using indices
  - Adding an edge would be O(1) - update matrix at a specific position
  - Removing an edge would be O(1) - set the matrix entry to 0
  - Iterating through all edges would be O(V^2) - iterate through all entries in the matrix
 
- # Traversing through a GRAPH
+ ## Traversing through a GRAPH
 
 
  
