@@ -18,11 +18,10 @@ Nodes/Vertices that are connected to each other are considered "neighbors" or "a
 - A Undirected graph signifies where the edges don't have any direction to them
 
 Example: 
-Imagine this is a graph of number that are scattered
 
-2 -- 3 -- 4 -- 6
+![Diagram7](/DiagramNotes/Graphs7.drawio.png)
 
-The "--" are the edges that don't have any direction
+The lines are the edges that don't have any direction
 this also means that we can travel forwards and backwards towards the Node/Vertex
 
 FOR EXAMPLE:
@@ -59,7 +58,7 @@ Ex:
 
 Imagine we have a graph with numbers
 
-5 -> 6 -> 9
+![Diagram8](/DiagramNotes/Graphs8.drawio.png)
 
 The predecessor of 6 is 5, the successor of 6 is 9
 
@@ -82,12 +81,9 @@ Tuple: p = [(4,3),(3,6),(6,8),(8,9),(9,5)] <- These values are in pairs!
 
 Ex:
 
+![Diagram9](/DiagramNotes/Graphs9.drawio.png)
 
-
-  "2"   "1"    "3"
-5-----6-----4------2
-
-the lines connecting the numbers have a "weight" associated with them
+the edges connecting the vertices have a "weight" associated with them
 
 
 now when you travel to a certain vertex, you can associate the weight into the travel
