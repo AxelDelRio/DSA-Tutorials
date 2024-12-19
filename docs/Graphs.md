@@ -237,6 +237,8 @@ Pen = {B:A, G:A, F:G, H:F}
 
 Q = [A,B,G,F,H]
 
+**NOTE:** Whenever we visit a vertex in our queue, then we pop/remove that specific vertex
+
 Now we find a reverse path(which could be an Array) starting from our designated Vertex so:
 
 We implement the rPath using our map - so we start of with H:F, then F:G, then finally G:A (We just follow the path back from H to A)
