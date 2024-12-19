@@ -9,8 +9,7 @@ connected graphs are considered connected when all nodes are connected
 
 **NOTE:** disconnected graphs are valid graphs
 
-Nodes/Vertices that are connected to each other are considered "neighbors" or "adjacency"
-. When we refer to the "Degree" of the vertex, it simply means the number of edges that are connected to that specific vertex
+Nodes/Vertices that are connected to each other are considered "neighbors" or "adjacency". When we refer to the "Degree" of the vertex, it simply means the number of edges that are connected to that specific vertex
 
 ## Types of Graphs
 
