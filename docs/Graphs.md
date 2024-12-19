@@ -130,9 +130,9 @@ Here is what our adjacency list would look like:
 
 ![Diagram2](/DiagramNotes/Graph2.drawio.png)
 
-NOTICE: each head of each list are the different vertices in our graph and each list contain the path/edge to another vertex
+**NOTICE:** each head of each list are the different vertices in our graph and each list contain the path/edge to another vertex
 
-REMEMBER: the Time complexity for an adjacency list is O(V) where V is the number of vertices or you can think of it as O(n). we consider it to be linear time since we have to traverse through the linked list to find the Vertex's adjacency. The space complexity is O(V + E) where V is the number of vertices and E are the number of edges
+**REMEMBER:** the Time complexity for an adjacency list is O(V) where V is the number of vertices or you can think of it as O(n). we consider it to be linear time since we have to traverse through the linked list to find the Vertex's adjacency. The space complexity is O(V + E) where V is the number of vertices and E are the number of edges
 
 SO the Adjacency List method is slow when looking up an edge but doesn't consume as much memory/resources. This makes the list useful when the graph has minimal edges but more vertices
 
@@ -155,22 +155,16 @@ Say we have a graph:
 
 Here is what our adjacency matrix would look like:
 
-    A B C D E
-    
-A   0 1 1 0 0
-B   1 0 0 1 1
-C   1 0 0 0 1
-D   0 1 0 0 0
-E   0 1 1 0 0
+![Diagram](/DiagramNotes/Graphs3.drawio.png)
 
 
-NOTICE: Whenever we consider there to be a path/edge to another vertex, we mark how many edges there are. 
+**NOTICE:** Whenever we consider there to be a path/edge to another vertex, we mark how many edges there are. 
 
 EX: In this case, we say that there is 1 edge between A and B
 
 This is how we keep track of the graphs structure overall with a adjacency matrix
 
-REMEMBER: The Time complexity for an adjacency matrix is O(1) since we only search between a row and column, BUT the space complexity is O(V^2) where V is the number of vertices that we have.
+**REMEMBER:** The Time complexity for an adjacency matrix is O(1) since we only search between a row and column, BUT the space complexity is O(V^2) where V is the number of vertices that we have.
 
 SO the Adjacency Matrix method is very fast when looking up an edge but consumes a lot of memory/resources. This makes the Matrix useful when the graph has a lot of Edges.
 
