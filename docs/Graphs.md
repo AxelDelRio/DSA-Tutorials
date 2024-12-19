@@ -10,6 +10,7 @@ connected graphs are considered connected when all nodes are connected
 **NOTE:** disconnected graphs are valid graphs
 
 Nodes/Vertices that are connected to each other are considered "neighbors" or "adjacency"
+When we refer to the "Degree" of the vertex, it simply means the number of edges that are connected to that specific vertex
 
 ## Types of Graphs
 
@@ -138,6 +139,9 @@ IN DEPTH COMPLEXITY FOR OPERATION USING ADJACENCY LIST:
  - Removing an edge would be O(V) - finding and removing the edge in the list
  - Iterating through all edges would be O(V + E)
 
+ - Inserting a Vertex would be O(1)
+ - Removing a Vertex would depend on the degree so O(deg(V))
+
 
 **3. Adjacency Matrix**
 
@@ -169,7 +173,91 @@ IN DEPTH COMPLEXITY FOR OPERATION USING ADJACENCY MATRIX:
  - Removing an edge would be O(1) - set the matrix entry to 0
  - Iterating through all edges would be O(V^2) - iterate through all entries in the matrix
 
+ - Inserting a Vertex would be O(V^2)
+ - Erasing a Vertex would be O(V^2)
  ## Traversing through a GRAPH
+
+ ### Depth-First Search
+
+Depth First search is a searching algorithm associated with graphs and trees which guarantees to find the specific vertex
+
+**NOTE:** The search will go by the InOrder Successor, **REMEMBER** InOrder traversal gos by left subtree, root, then right subtree.
+
+Let's do an example, say we have this graph:
+
+![Diagram10](/DiagramNotes/GraphImages/Graphs10.drawio.png)
+
+We want to travel from A to H, so we create a Visitor List and Path list
+
+The Visited List are all the VERTICES we visited so our list would look like:
+
+V = {A,B,G,F,H}
+
+The Path List is the successful path to take to get to the designated Vertex, it would look like:
+
+P = {A,G,F,H}
+
+**NOTICE:** We visited the B vertex in our Vistor List, this means that if we don't find a successful path, 
+            the algorithm will recurse back to the original Vertex and try a different path.
+
+**SO** We know that Depth-First Search uses recursion, and will take the longer path towards the designated Vertex.
+
+Let's try to travel from A to C, if we eyeball the graph then we know there is no successful path
+
+Our Visitor would look like this:
+
+V = {A,B,G,F,H}
+
+Since we can't get to C, there is no valid Path list so we just return a Null or Nothing!
+
+TIME COMPLEXITY: O(V + E)
+SPACE COMPLEXITY: O(V)
+
+We would use a DFS over a BFS if we want to search for all possible paths to the designated Vertex
+
+### Breadth-First Search
+
+Breadth-First Search is a searching algorithm also used with graphs and trees and also finds a designated Vertex
+
+**NOTE:** Breadth-First Search uses a LevelOrder traversal, in a Graph we just say that it traverses to the Vertex's adjacency
+
+Alternatively, Breadth-First Search uses a Queue and Map, **REMEMBER** a Queue is FIFO (First in, First out)
+
+Let's use the same example:
+
+![Diagram10](/DiagramNotes/GraphImages/Graphs10.drawio.png)
+
+Let's travel from A to H:
+
+Our **Penultimate** will include the Map, where the key is the path to another Vertex and the value is the current Vertex
+Our **Queue** will include all the visited vertices from the key of our Penultimate
+
+Here is what that would look like:
+
+Pen = {B:A, G:A, F:G, H:F}
+
+Q = [A,B,G,F,H]
+
+Now we find a reverse path(which could be an Array) starting from our designated Vertex so:
+
+We implement the rPath using our map - so we start of with H:F, then F:G, then finally G:A (We just follow the path back from H to A)
+
+This is what our rPath array will look like:
+
+rPath = [H,F,G,A]
+
+Then finally, we just reverse the Array, here is what the final product should look like:
+
+Path = [A,G,F,H]
+
+**NOTE:** Breadth-First Search finds a shorter pathway compared to Depth-First Search
+
+Also, if we don't find the designated Vertex in our Queue, then we just return Null or nothing since we didn't find a path
+
+TIME COMPLEXITY: O(V + E)
+SPACE COMPLEXITY: O(V)
+
+We would want to use a BFS over a DFS if we want to search for the shortest possible path to the designated Vertex
 
 
  
