@@ -128,7 +128,7 @@ Say we have a graph:
 
 Here is what our adjacency list would look like:
 
-![Diagram2](DiagramNotes/Graph2.drawio.png)
+![Diagram2](/DiagramNotes/Graph2.drawio.png)
 
 NOTICE: each head of each list are the different vertices in our graph and each list contain the path/edge to another vertex
 
