@@ -124,10 +124,7 @@ With an Adjacency List, we create an Array full of Linked List's where each head
 EX:
 Say we have a graph:
 
-A -- B -- D
-|    |
-|    |
-C -- E
+![Diagram](/DiagramNotes/Graphs1.drawio.png)
 
 Here is what our adjacency list would look like:
 
