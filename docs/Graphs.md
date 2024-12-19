@@ -56,10 +56,13 @@ NOTE: We also associate cycles in our graph. A cycle in our graph means we can g
 
 EX: 
 
-Cycle:   A -- B     Acyclic:    A -- B
-         |    |                      |
-         |    |                      |
-         D -- C                      C
+Cycle:
+
+![Diagram4](/DiagramNotes/Graphs4.drawio.png)
+
+Acyclic:
+
+![Diagram5](/DiagramNotes/Graphs5.drawio.png)
 
 
 
