@@ -30,28 +30,6 @@ FOR EXAMPLE:
 We can think of a Social Network as an undirected graph
 Where the Nodes/Vertices are people and the edges are chats/messages
 
-
-### Directed Graph
-
-- A Directed Graph have the edges point to a specific direction or to a specific Node! (make sure all the edges have a direction)
-
-**NOTE:** These edges are one way connection, meaning you can't go both forward and back to the vertex (Unless we have 2 directed edges that go forward and backwards to the vertex)
-
-Example: 
-
-We can think of each vertex as a city where the edges are one way streets and a double edge between vertices are two way streets!
-
-Once we have a directed graph, we can have successors and predecessors
-Ex:
-
-Imagine we have a graph with numbers
-
-5 -> 6 -> 9
-
-The predecessor of 6 is 5
-
-the successor of 6 is 9
-
 NOTE: We also associate cycles in our graph. A cycle in our graph means we can go through vertices many times and a Acyclic graph signifies there is no cycle.
 
 EX: 
@@ -65,13 +43,31 @@ Acyclic:
 ![Diagram5](/DiagramNotes/Graphs5.drawio.png)
 
 
+### Directed Graph
+
+- A Directed Graph have the edges point to a specific direction or to a specific Node! (make sure all the edges have a direction)
+
+**NOTE:** These edges are one way connection, meaning you can't go both forward and back to the vertex (Unless we have 2 directed edges that go forward and backwards to the vertex)
+
+Example: 
+
+We can think of each vertex as a city where the edges are one way streets and a double edge between vertices are two way streets!
+
+Once we have a directed graph, we can have successors and predecessors
+
+Ex:
+
+Imagine we have a graph with numbers
+
+5 -> 6 -> 9
+
+The predecessor of 6 is 5, the successor of 6 is 9
 
 Remember we can also have directed edges that point forwards and backwards to a vertex
 
 Ex:
 
-3 -> 5
-  <-
+![Diagram6](/DiagramNotes/Graphs6.drawio.png)
 
 we describe where to travel from one node to another as a Tuple (values in pairs)
 
