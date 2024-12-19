@@ -93,9 +93,9 @@ using the illustration above, when we try to travel from 5 to 2. the cost of tha
 
 (2+1+3)
 
-the Tuple would look like this:
+the Tuple format would look like this:
 
-//(1st numbers, second number, cost/weight of edge)
+(1st numbers, second number, cost/weight of edge)
 
 p = [(5,6,2), (6,4,1), (4,2,3)]
 
