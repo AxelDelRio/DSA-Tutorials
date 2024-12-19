@@ -19,7 +19,7 @@ Nodes/Vertices that are connected to each other are considered "neighbors" or "a
 
 Example: 
 
-![Diagram7](/DiagramNotes/Graphs7.drawio.png)
+![Diagram7](/DiagramNotes/GraphImages/Graphs7.drawio.png)
 
 The lines are the edges that don't have any direction
 this also means that we can travel forwards and backwards towards the Node/Vertex
@@ -35,11 +35,11 @@ EX:
 
 Cycle:
 
-![Diagram4](/DiagramNotes/Graphs4.drawio.png)
+![Diagram4](/DiagramNotes/GraphImages/Graphs4.drawio.png)
 
 Acyclic:
 
-![Diagram5](/DiagramNotes/Graphs5.drawio.png)
+![Diagram5](/DiagramNotes/GraphImages/Graphs5.drawio.png)
 
 
 ### Directed Graph
@@ -58,7 +58,7 @@ Ex:
 
 Imagine we have a graph with numbers
 
-![Diagram8](/DiagramNotes/Graphs8.drawio.png)
+![Diagram8](/DiagramNotes/GraphImages/Graphs8.drawio.png)
 
 The predecessor of 6 is 5, the successor of 6 is 9
 
@@ -66,7 +66,7 @@ Remember we can also have directed edges that point forwards and backwards to a 
 
 Ex:
 
-![Diagram6](/DiagramNotes/Graphs6.drawio.png)
+![Diagram6](/DiagramNotes/GraphImages/Graphs6.drawio.png)
 
 we describe where to travel from one node to another as a Tuple (values in pairs)
 
@@ -81,7 +81,7 @@ Tuple: p = [(4,3),(3,6),(6,8),(8,9),(9,5)] <- These values are in pairs!
 
 Ex:
 
-![Diagram9](/DiagramNotes/Graphs9.drawio.png)
+![Diagram9](/DiagramNotes/GraphImages/Graphs9.drawio.png)
 
 the edges connecting the vertices have a "weight" associated with them
 
@@ -119,11 +119,11 @@ With an Adjacency List, we create an Array full of Linked List's where each head
 EX:
 Say we have a graph:
 
-![Diagram](/DiagramNotes/Graphs1.drawio.png)
+![Diagram1](/DiagramNotes/GraphImages/Graphs1.drawio.png)
 
 Here is what our adjacency list would look like:
 
-![Diagram2](/DiagramNotes/Graph2.drawio.png)
+![Diagram2](/DiagramNotes/GraphImages/Graph2.drawio.png)
 
 **NOTICE:** each head of each list are the different vertices in our graph and each list contain the path/edge to another vertex
 
@@ -146,11 +146,11 @@ With an adjacency matrix, we create a 2D array where the column and rows are the
 EX:
 Say we have a graph:
 
-![Diagram](/DiagramNotes/Graphs1.drawio.png)
+![Diagram1](/DiagramNotes/GraphImages/Graphs1.drawio.png)
 
 Here is what our adjacency matrix would look like:
 
-![Diagram](/DiagramNotes/Graphs3.drawio.png)
+![Diagram3](/DiagramNotes/GraphImages/Graphs3.drawio.png)
 
 
 **NOTICE:** Whenever we consider there to be a path/edge to another vertex, we mark how many edges there are. 
