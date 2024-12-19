@@ -158,7 +158,7 @@ With an adjacency matrix, we create a 2D array where the column and rows are the
 EX:
 Say we have a graph:
 
-![](/DiagramNotes/Graphs1.drawio.png)
+![Diagram](/DiagramNotes/Graphs1.drawio.png)
 
 Here is what our adjacency matrix would look like:
 
