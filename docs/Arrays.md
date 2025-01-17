@@ -28,15 +28,21 @@ The template T variable lets the user input any type of data they want!
 
 Exampe of template T syntax:
 
-**template<typename T>;**
+```cpp
+template <typename T>
+```
 
 Now the user can implement our array in any way:
 
-**Array<int> myArray;**
+```cpp
+Array<int> myArray;
+```
 
 OR
 
-**Array<String> myArray;**
+```cpp
+Array<String> myArray;
+```
 
 
 
