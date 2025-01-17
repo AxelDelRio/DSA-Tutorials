@@ -1,4 +1,4 @@
-## ARRAYS
+# ARRAYS
 
 An Array is a list of data with indexes, these indexes count the place in which the data is in the list
 
@@ -21,6 +21,8 @@ EX:
 ![Diagram 3](/DiagramNotes/ArraysImages/Arrays3.drawio.png)
 
 In the example above, instead of using numbers, we use String values!
+
+## Template Variables
 
 * It's important to note that in our implentation, for our data type, we just use a template T variable so that the user can make an array of any type of data!
 
