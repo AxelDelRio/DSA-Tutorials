@@ -4,7 +4,7 @@ An Array is a list of data with indexes, these indexes count the place in which 
 
 EX:
 
-Let's just say our array is filled with random numbers
+Let's fill up our array with random numbers
 
 ![Diagram 1](/DiagramNotes/ArraysImages/Arrays1.drawio.png)
 
@@ -18,26 +18,25 @@ Now, instead of using random data (Like numbers) we can use different data types
 
 EX:
 
-["Banana", "Strawberry", "Blueberry"]
-    0           1             2
+![Diagram 3](/DiagramNotes/ArraysImages/Arrays3.drawio.png)
 
 In the example above, instead of using numbers, we use String values!
 
-* In our implentation, for our data, we just use a template T variable so that the user can make an array of any type of data!
+* It's important to note that in our implentation, for our data type, we just use a template T variable so that the user can make an array of any type of data!
 
 The template T variable lets the user input any type of data they want!
 
 Exampe of template T syntax:
 
-template <typename T>
+**template <typename T>**
 
 Now the user can implement our array in any way:
 
-Array<int> myArray;
+**Array<int> myArray;**
 
-    OR
+OR
 
-Array<String> myArray;
+**Array<String> myArray;**
 
 
 
