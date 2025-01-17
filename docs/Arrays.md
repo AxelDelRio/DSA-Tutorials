@@ -28,7 +28,7 @@ The template T variable lets the user input any type of data they want!
 
 Exampe of template T syntax:
 
-**template <typename T>**
+**template<typename T>;**
 
 Now the user can implement our array in any way:
 
